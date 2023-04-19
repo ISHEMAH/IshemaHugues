@@ -1,0 +1,145 @@
+@font-face {
+  font-family: Leegione;
+  src: url('./Fonts/Leegione-1GL6j.ttf');
+}
+@font-face {
+  font-family: PoppinsBold;
+  src: url('./Fonts/PoppinsBold-GdJA.otf');
+}
+
+@font-face {
+  font-family: PoppinsMedium;
+  src: url('./Fonts/PoppinsMedium-1JPv.otf');
+}
+@font-face {
+  font-family: PoppinsRegular;
+  src: url('./Fonts/PoppinsRegular-B2Bw.otf');
+}
+@font-face {
+  font-family: PoppinsSemibold;
+  src: url('./Fonts/PoppinsSemibold-8l8n.otf');
+}
+@font-face {
+  font-family: SharpGrotesk;
+  src: url('./Fonts/SharpGrotesk-Black25.otf');
+}
+
+body{
+  background-color: #040412;
+  color: white;
+  
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  align-items: center;
+  width: 100%;
+  background: rgba(0, 0, 0, 0);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.5px);
+  -webkit-backdrop-filter: blur(10.5px);
+  border-bottom: 1px solid #0099ff2c;
+
+}
+
+
+nav h2{
+  font-family: Leegione;
+  color: #0099FF;
+  transition: all 0.5s ease;
+  text-indent: 25%;
+}
+nav h2 span:hover{
+  color: #72c7ff;
+}
+nav div{
+  
+  display: flex;
+  float: right;
+  gap: 20px;
+  
+}
+nav div a{
+  width: fit-content;
+  font-family: PoppinsRegular;
+  color: rgba(255, 255, 255, 0.348);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+nav div a:hover {
+  color: rgba(255, 255, 255, 0.599);
+}
+nav div a:hover span{
+  text-decoration: underline;
+}
+nav div .active{
+  color: #0099FF;
+}
+nav div .active span{
+  text-decoration: underline ;
+}
+.Home{
+  padding-top: 12%;
+  margin: 0px 5%;
+  display: flex;
+  flex-direction: row;
+}
+.Home h3{
+  font-family: SharpGrotesk;
+  color: #ffffff;
+  font-size: 2em;
+
+}
+.Home h3 span{
+  color: #0099FF;
+}
+.navigation {
+  width: 45%;
+  justify-content: end;
+}
+.name {
+  width: 50%;
+  justify-content: start;
+}
+.Home .info{
+  font-family: PoppinsRegular;
+  color: rgba(255, 255, 255, 0.786);
+}
+.Home .info button{
+  padding: 3% 3%;
+  width: 120px;
+  border: none;
+  border-radius: 10px;
+  font-family: PoppinsMedium;
+  color: #ffffff;
+  background-color: #0099FF;
+  border: 1px solid #0099FF;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.Home .info button:hover {
+  color: #0099FF;
+  background-color: transparent;
+  border: 1px dashed#0099FF;
+}
+.quicklinks{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5%;
+  margin-top: 30px;
+}
+.quicklinks div{
+  width: 30px;
+  height: 30px;
+  border: 1px solid red;
+}
+.profile{
+  width: 50%;
+  border: 1px solid red;
+}
+.Home .info{
+  width: 50%;
+}
+ 
