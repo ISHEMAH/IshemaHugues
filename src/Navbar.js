@@ -7,16 +7,16 @@ function Navbar(){
                 </h2>
             </div>
             <div className="navigation">
-                <a href="" className="active">
+                <a href="#Home" className="active">
                     <span>Ho</span>me
                 </a>
-                <a href="">
+                <a href="#Projects">
                     <span>Pro</span>jects
                 </a>
-                <a href="">
+                <a href="#About">
                     <span>Ab</span>out
                 </a>
-                <a href="">
+                <a href="#Contact">
                     <span>Cont</span>act me
                 </a>
             </div>

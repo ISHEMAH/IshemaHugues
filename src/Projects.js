@@ -50,7 +50,7 @@ const Projects = () => {
 
     return (
         
-            <div className="Projects">
+            <div className="Projects" id='Projects'>
             <h2>Awesome <span>Projects</span></h2>
             <p>These are some of Projects I Do.</p>
             <div className="Projects-Container">

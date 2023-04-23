@@ -6,7 +6,7 @@ import tweet from './icons/tweet.svg'
 
 function Home(){
     return(
-        <div className="Home">
+        <div className="Home" id='Home'>
             
            
             <div className="info">

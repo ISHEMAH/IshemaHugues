@@ -113,7 +113,7 @@
 body{
   background-color: #040412;
   color: white;
-
+  overflow-x: hidden;
 }
 nav {
   display: flex;
@@ -136,6 +136,7 @@ nav h2{
   transition: all 0.5s ease;
   text-indent: 25%;
   animation: glow 10s  infinite normal ease;
+  cursor: default;
 }
 nav h2 span:hover{
   color: #72c7ff;
@@ -331,5 +332,199 @@ nav div .active span{
   color: #0099FF;
   font-family: PoppinsMedium;
   text-decoration: none;
+}
+.Contact{
+  padding-top: 5%;
+  margin: 0px 5%;
+  display: flex;
+  width: 90%;
+  padding-bottom: 5%;
+}
+.Contact-area{
+  width: 50%;
+
+}
+.Contact .Contact-area h2{
+  font-family: SharpGrotesk;
+  animation: switchone 5s 2s infinite alternate ease-in-out;
+}
+.Contact-area h2 span{
+  color: #0099FF;
+  animation: switchtwo 5s 2s infinite alternate ease-in-out;
+}
+.Contact-area form{
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  
+}
+.Contact-area form input{
+  width: 60%;
+  height: 30px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.652);
+  border: 1px solid #0099FF;
+  color: white;
+  margin-bottom: 5%;
+  max-width: 300px;
+}
+.Contact-area form input:hover{
+  box-shadow:0px 0px 10px 2px #0099ff34;
+}
+.Contact-area form input:hover:focus ,.Contact-area form input:focus{
+  border-bottom: 4px solid #0099FF;
+  border-top: 1px solid #0099FF;
+  border-right: 1px solid #0099FF;
+  border-left: 1px solid #0099FF;
+  font-family: PoppinsRegular;
+  text-indent: 15px;
+  outline: none;
+  
+  
+}
+.Contact-area label{
+  padding-bottom: 5%;
+  color: rgba(255, 255, 255, 0.633);
+}
+.Contact-area form textarea{
+  width: 80%;
+  height: 180px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.652);
+  border: 1px solid #0099FF;
+  color: white;
+  margin-bottom: 5%;
+  max-width: 500px;
+  resize: none;
+  padding-top: 10px;
+}
+.Contact-area form textarea:hover{
+  box-shadow:0px 0px 10px 2px #0099ff34;
+}
+.Contact-area form textarea:hover:focus ,.Contact-area form textarea:focus{
+  border-bottom: 4px solid #0099FF;
+  border-top: 1px solid #0099FF;
+  border-right: 1px solid #0099FF;
+  border-left: 1px solid #0099FF;
+  font-family: PoppinsRegular;
+  text-indent: 15px;
+  outline: none;
+  
+  
+}
+.Contact-area form button{
+
+    padding: 3% 3%;
+    width: 120px;
+    border: none;
+    border-radius: 10px;
+    font-family: PoppinsMedium;
+    color: #ffffff;
+    background-color: #0099FF;
+    border: 1px solid #0099FF;
+    transition: all 0.2s ease;
+    cursor: pointer;}
+
+.Contact-area form button:hover{
+    color: #0099FF;
+    background-color: transparent;
+    border: 1px dashed#0099FF;
+  }
+.other-area{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.Globe{
+  width: 80%;
+  max-width: 300px;
+}  
+.links{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15%;
+}
+.links div{
+  width: 60px;
+  background-color: #0099FF;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  position: relative;
+  cursor: pointer;
+}
+.links div:hover{
+  background-color: transparent;
+  border: 1px solid #0099FF;
+  box-shadow: 0px 0px 6px 1px #0099ff84;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+.links img{
+  color: black;
+  height: 30%;
+}
+.About{
+  padding-top: 5%;
+  margin: 0px 5%;
+  display: flex;
+  width: 90%;
+  padding-bottom: 5%;
+  height: 500px;
+  gap: 5%;
+}
+.About .photo{
+  width: 35%;
+  background-image: url('./images/Photo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+}
+.aboutme{
+  width: 55%;
+
+}
+.aboutme h2{
+  font-family: SharpGrotesk;
+  animation: switchone 5s 2s infinite alternate ease-in-out;
+}
+.aboutme h2 span{
+  color: #0099FF;
+  animation: switchtwo 5s 2s infinite alternate ease-in-out;
+}
+.aboutme p{
+  font-family: PoppinsRegular;
+  font-family: 0.8em;
+  color: rgba(255, 255, 255, 0.586);
+}
+ul .active{
+  color: #0099FF;
+  list-style: armenian #0099ff !important;
+  font-family: PoppinsBold;
+  
+}
+.Carriers{
+  width: 90%;
+  height: 245px;
+  overflow-y: scroll;
+}
+ul .passive{
+  color: #ffffffbd;
+  list-style: none;
+  font-family: PoppinsMedium;
+  cursor: pointer;
+}
+ul .passive:hover{
+  color: #ffffffed;
 }
 
