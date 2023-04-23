@@ -23,11 +23,97 @@
   font-family: SharpGrotesk;
   src: url('./Fonts/SharpGrotesk-Black25.otf');
 }
+@keyframes box {
+  0%{
+    transform: rotate(0deg);
+    box-shadow: none;
+  }
+  100%{
+    transform: rotate(360deg);
+    border-radius: 20px;
+    box-shadow: 0px 0px 200px 20px #0099FF;
+  }
+  
+}
+@keyframes switchone {
+  0%{
+    color: white;
+  }
+  100%{
+    color:#0099FF
+  }
+}
+@keyframes switchtwo {
+  0%{
+    color: #0099FF;
+  }
+  100%{
+    color: white;
+  }
+}
+@keyframes glow {
+  0%{
+    
+
+  }
+  20%{
+    text-shadow: 0px 0px 5px #0099FF;
+
+  }
+  40%{
+    text-shadow: 0px 0px 10px #0099FF;
+
+  }
+  60%{
+    text-shadow: 0px 0px 15px #0099FF;
+  }
+
+  80%{
+    text-shadow: 0px 0px 20px #0099FF;
+  }
+  100%{
+    text-shadow: 0px 0px 30px #0099FF;
+    
+  }
+}
+
+
+ @keyframes filter {
+    0%{
+      transform: scale(1.0);
+    }
+    100%{
+      transform: scale(1.4);
+      border-radius: 20px;
+    }
+} 
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(206, 206, 206); 
+  border-radius: 20px;
+  cursor: all-scroll; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(113, 132, 255);
+  
+}
 
 body{
   background-color: #040412;
   color: white;
-  
+
 }
 nav {
   display: flex;
@@ -40,7 +126,7 @@ nav {
   backdrop-filter: blur(10.5px);
   -webkit-backdrop-filter: blur(10.5px);
   border-bottom: 1px solid #0099ff2c;
-
+ z-index: 999;
 }
 
 
@@ -49,6 +135,7 @@ nav h2{
   color: #0099FF;
   transition: all 0.5s ease;
   text-indent: 25%;
+  animation: glow 10s  infinite normal ease;
 }
 nav h2 span:hover{
   color: #72c7ff;
@@ -133,13 +220,116 @@ nav div .active span{
 .quicklinks div{
   width: 30px;
   height: 30px;
-  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 .profile{
   width: 50%;
-  border: 1px solid red;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 .Home .info{
   width: 50%;
 }
+.quicklinks div img{
+  height: 50%;
+}
+.quicklinks div:hover{
+  transform: scale(1.1);
+}
+.profile .box{
+  min-width: 300px;
+  min-height: 300px;
+  max-width: 300px;
+  max-height: 300px;
+  border: 1px solid #0099FF;
+  animation-name: box;
+  animation-duration: 10s;
+  animation-delay: 0s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  
+}
+.profile .Image{
+  min-width: 200px;
+  min-height: 200px;
+  max-width: 400px;
+  max-height: 400px;
+  position: absolute;
+  animation: filter 5s infinite alternate-reverse;
+  background-image: url('./images/intro.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Projects {
+  padding-top: 5%;
+  margin: 0px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+}
+.Projects h2{
+  font-family: SharpGrotesk;
+  animation: switchone 5s 2s infinite alternate ease-in-out;
+}
+
+.Projects h2 span{
+  color: #0099FF;
+  animation: switchtwo 5s 2s infinite alternate ease-in-out;
+}
+.Projects>p{
+  font-family: PoppinsRegular;
+  color: rgba(255, 255, 255, 0.786);
+}
+.Projects-Container{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  gap: 1%;
+  overflow-x: scroll;
+}
+.Projects-Container .project {
+  min-width: 300px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.06);
+  padding: 1% 5%;
  
+}
+.Projects-Container .project img{
+  width: 80%;
+  border-radius: 10px;
+  display: block;
+}
+.Projects-Container .project:hover{
+  background-color: rgba(255, 255, 255, 0.121);
+}
+.Projects-Container .project a {
+  top: 20px;
+  position: relative;
+  color: white;
+  font-family: PoppinsMedium;
+}
+.project h3{
+  font-family: poppinsSemibold;
+  color: #0099FF;
+}
+.project p{
+  color: rgba(255, 255, 255, 0.532);
+  font-family: PoppinsRegular;
+}
+.Projects>a{
+  position: relative;
+  padding-top: 20px;
+  color: #0099FF;
+  font-family: PoppinsMedium;
+  text-decoration: none;
+}
+

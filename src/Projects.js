@@ -1,5 +1,9 @@
 import { useState } from "react";
-
+import secroom from './images/secroom.png'
+import Ishema from './images/Ishema.jpg'
+import Hufit from './images/Hufit.jpg'
+import Twigirejo from './images/Twigirejo.png'
+import Cyira from './images/Cyira.png' 
 
 const Projects = () => {
     const [projects, setProjects] = useState([
@@ -7,30 +11,38 @@ const Projects = () => {
         {
             id:"project1",
             name:"Secroom",
-            Description:"This is a password manager mobile app"
-            // image:Secroom;
-
+            Description:"This is a password manager mobile app",
+            image:secroom,
+            link:"https://dribbble.com/"
+                
 
         }
         ,
         {
             id:"project2",
             name:"Art",
-            Description:"A simple Art of Graphical Design"
-
+            Description:"A simple Art of Graphical Design",
+            image:Ishema
         }
         ,
         {
             id:"project3",
             name:"Hufit",
-            Description:"A fitness Mobile App"
+            Description:"A fitness Mobile App",
+            image:Hufit
 
         },
         {
             id:"project4",
             name:"  Twigirejo",
-            Description:"Logo Design For an E-Learning Platform"
-
+            Description:"Logo Design For an E-Learning Platform",
+            image:Twigirejo
+        },
+        {
+            id:"project5",
+            name:"Cyira",
+            Description:"Job Finder Platform",
+            image:Cyira
         }
         
 
@@ -38,17 +50,20 @@ const Projects = () => {
 
     return (
         
-            <div>
-            {/* <svg height="100" width="100">
-                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
-            </svg> */}
+            <div className="Projects">
+            <h2>Awesome <span>Projects</span></h2>
+            <p>These are some of Projects I Do.</p>
+            <div className="Projects-Container">
             {projects.map((projects) => (
                 <div className="project" key={projects.id}>
                     <h3>{projects.name}</h3>
                     <p>{projects.Description}</p>
+                    <img src={projects.image}></img>
+                    {projects.link ? <a href={projects.link}>View</a> : null}
                 </div>
             ))}
-            <a>See more</a>
+            </div>
+            <a href="">See more</a>
             </div>
         
     )
