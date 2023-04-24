@@ -527,4 +527,42 @@ ul .passive{
 ul .passive:hover{
   color: #ffffffed;
 }
+.progress-container{
+  width: 90%;
+  height: 20px;
+  background-color: white;
+  border-radius: 200px;
+}
+
+.progress1{
+  height: 100%;
+  width: 95%;
+  background-color: #0099FF;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.progress2{
+  height: 100%;
+  width: 86%;
+  background-color: #0099FF;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.progress3{
+  height: 100%;
+  width: 74%;
+  background-color: #0099FF;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 

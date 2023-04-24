@@ -3,6 +3,7 @@ import ig from './icons/ig.svg'
 import fb from './icons/fb.svg'
 import lin from './icons/in.svg'
 import tweet from './icons/tweet.svg'
+import emailjs from 'emailjs-com';
 
 function Contact(){
     return(
