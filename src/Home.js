@@ -1,5 +1,5 @@
 import ig from './icons/ig.svg'
-import fb from './icons/fb.svg'
+import git from './icons/git.svg'
 import lin from './icons/in.svg'
 import tweet from './icons/tweet.svg'
 
@@ -10,24 +10,32 @@ function Home(){
             
            
             <div className="info">
-                <h3><span>Hi! </span>I'm <span>Hugues</span><br/>UX<span>/</span>UI Designer</h3>
+                <h3><span>Hi! </span>I'm <span>Hugues</span><br/>UX<span>/</span>UI Designer <br/>& <span>Web</span> Developer</h3>
                 <p>
                     I have been working as a UI/UX Designer for 3 years,Product designer for 1 year and graphic designer for 5 years.
                 </p>
                 <div className="quicklinks">
                     <button>Hire me</button>
-                    <div>
-                        <img src = {ig}/>
-                    </div>
-                    <div>
+                    <a href='http://www.instagram.com/i.s.h.e.m.a/' target='_blank'>
+                        <div>
+                            <img src = {ig}/>
+                        </div>
+                    </a>
+                    <a href='https://www.linkedin.com/in/ishema-hugues-848163256/' target='_blank'>
+                    <div>   
                     <img src = {lin}/>
                     </div>
+                    </a> 
+                    <a href='https://twitter.com/HuguesIshema' target='_blank'>
                     <div>
                     <img src = {tweet}/>
                     </div>
-                    <div>
-                    <img src = {fb}/>
-                    </div>
+                    </a>
+                    <a href='https://github.com/ISHEMAH' target='_blank'>
+                        <div>
+                            <img src = {git}/>
+                        </div>
+                    </a>
                 </div>
             </div>
             <div className="profile">

@@ -7,7 +7,7 @@ function Navbar(){
                 </h2>
             </div>
             <div className="navigation">
-                <a href="#Home" className="active">
+                <a href="#Home">
                     <span>Ho</span>me
                 </a>
                 <a href="#Projects">

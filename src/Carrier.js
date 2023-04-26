@@ -93,7 +93,7 @@ const Carrier = () => {
               </div>
             ) : null}
             {carrier.name !== "Skills" && carrier.active ? (
-              <div>
+              <div className="skills">
                 <h3>{carrier.end1.end}</h3>
                 <p>{carrier.end1.description}</p>
                 <h3>{carrier.end2.end}</h3>
@@ -105,6 +105,9 @@ const Carrier = () => {
           </div>
         </div>
       ))}
+      <div className="scroll">
+        <p>Scroll</p>
+      </div>
     </div>
   );
 };
