@@ -105,9 +105,7 @@ const Carrier = () => {
           </div>
         </div>
       ))}
-      <div className="scroll">
-        <p>Scroll</p>
-      </div>
+      
     </div>
   );
 };

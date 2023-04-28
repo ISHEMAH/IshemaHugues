@@ -17,7 +17,7 @@ function Navbar(){
                     <span>Ab</span>out
                 </a>
                 <a href="#Contact">
-                    <span>Cont</span>act me
+                    <span>Co</span>ntact
                 </a>
             </div>
         </nav>

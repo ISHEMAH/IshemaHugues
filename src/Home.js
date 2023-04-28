@@ -10,10 +10,12 @@ function Home(){
             
            
             <div className="info">
+                <div className="infomain">
                 <h3><span>Hi! </span>I'm <span>Hugues</span><br/>UX<span>/</span>UI Designer <br/>& <span>Web</span> Developer</h3>
                 <p>
                     I have been working as a UI/UX Designer for 3 years,Product designer for 1 year and graphic designer for 5 years.
                 </p>
+                </div>
                 <div className="quicklinks">
                     <button>Hire me</button>
                     <a href='http://www.instagram.com/i.s.h.e.m.a/' target='_blank'>
@@ -45,9 +47,9 @@ function Home(){
                 <div className="Image">
                                         
                     </div>
-                <img></img>
+                
             </div>
-            
+            <a href='#Home'><div className='moveup'></div></a>
         </div>
         
     );

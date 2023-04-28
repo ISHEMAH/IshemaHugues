@@ -12,8 +12,7 @@ const Projects = () => {
             id:"project1",
             name:"Secroom",
             Description:"This is a password manager mobile app",
-            image:secroom,
-            link:"https://dribbble.com/"
+            image:secroom
                 
 
         }
@@ -59,11 +58,11 @@ const Projects = () => {
                     <h3>{projects.name}</h3>
                     <p>{projects.Description}</p>
                     <img src={projects.image}></img>
-                    {projects.link ? <a href={projects.link}>View</a> : null}
+                    
                 </div>
             ))}
             </div>
-            <a href="">See more</a>
+            <a href="#Contact">See more</a>
             </div>
         
     )
