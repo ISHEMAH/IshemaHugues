@@ -17,7 +17,10 @@ function Home(){
                 </p>
                 </div>
                 <div className="quicklinks">
-                    <button>Hire me</button>
+                    <a href='#Contact'>
+                        <button>Hire me</button>
+                    </a>
+                    
                     <a href='http://www.instagram.com/i.s.h.e.m.a/' target='_blank'>
                         <div>
                             <img src = {ig}/>
@@ -49,7 +52,7 @@ function Home(){
                     </div>
                 
             </div>
-            <a href='#Home'><div className='moveup'></div></a>
+            
         </div>
         
     );

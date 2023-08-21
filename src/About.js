@@ -12,10 +12,7 @@ function About(){
                 </p>
                 <Carrier/>
             </div>
-            <div className="scroll">
-                
-                <p>Scroll</p>
-            </div>
+            
         </div>
     );
 }

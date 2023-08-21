@@ -24,7 +24,7 @@ const Carrier = () => {
         end: "Backend",
         description: "1 year of experience In Backend using Django.",
       },
-      active: false,
+      active: true,
     },
     {
       name: "Education",
@@ -40,21 +40,11 @@ const Carrier = () => {
         end: "Rwanda Coding Academy",
         description: "2022-2025",
       },
-      active: false,
+      active: true,
     },
   ]);
 
-  const handleClick = (clickedIndex) => {
-    setCarrier((prevCarrier) =>
-      prevCarrier.map((item, index) => {
-        if (index === clickedIndex) {
-          return { ...item, active: true };
-        } else {
-          return { ...item, active: false };
-        }
-      })
-    );
-  };
+  
 
   return (
     <div className="Carriers">
@@ -64,7 +54,7 @@ const Carrier = () => {
             {carrier.active ? (
               <li className="active">{carrier.name}</li>
             ) : (
-              <li className="passive" onClick={() => handleClick(index)}>
+              <li className="passive">
                 {carrier.name}
               </li>
             )}
