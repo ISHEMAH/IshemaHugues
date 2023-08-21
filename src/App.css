@@ -589,10 +589,11 @@ ul .passive:hover{
   display: none;
 }
 
-@media screen and (min-width:360px) and (max-width:767px){
+@media screen and (min-width:0px) and (max-width:767px){
   body{
     font-size: 0.8em;
     align-items: center;
+    overflow-x: hidden;
   }
   .Globe{
     display: none;
@@ -600,9 +601,7 @@ ul .passive:hover{
   .Contact-area{
     width: 100%;
   }
-  .other-area{
-    
-  }
+
   .Contact-area form{
     justify-content: center;
     align-items: center;
@@ -623,6 +622,7 @@ ul .passive:hover{
     align-items: center;
     align-self: center;
     padding-right: 5%;
+    padding-top: 15%;
     
   }
   .Home .profile{
