@@ -71,7 +71,7 @@ const Carrier = () => {
                 <h3>{carrier.end2}</h3>
                 <div className="progress-container">
                   <div className="progress2">
-                    <p>86%</p>
+                    <p>93%</p>
                   </div>
                 </div>
                 <h3>{carrier.end3}</h3>
