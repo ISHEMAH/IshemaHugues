@@ -13,7 +13,7 @@ function Home(){
                 <div className="infomain">
                 <h3><span>Hi! </span>I'm <span>Hugues</span><br/>UX<span>/</span>UI Designer <br/>& <span>Web</span> Developer</h3>
                 <p>
-                    I have been working as a UI/UX Designer for 3 years,Product designer for 1 year and graphic designer for 5 years.
+                    I have been working as a UI/UX Designer for 3 years,Software Developer and Mobile Developer for 2 years.
                 </p>
                 </div>
                 <div className="quicklinks">

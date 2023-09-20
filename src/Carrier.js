@@ -18,11 +18,11 @@ const Carrier = () => {
       },
       end2: {
         end: "Frontend",
-        description: "2 years of experience In Frontend using ReactJS,TailwindCSS and more.",
+        description: "2 years of experience In Frontend using ReactJS,React Native,Javascript,Flutter,Bootstrap,TailwindCSS and more.",
       },
       end3: {
         end: "Backend",
-        description: "1 year of experience In Backend using Django.",
+        description: "1 year of experience In Backend using Django,Node JS",
       },
       active: true,
     },
